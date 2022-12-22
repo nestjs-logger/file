@@ -36,7 +36,7 @@ var FileLogger = /** @class */ (function () {
             message: message,
             optionalParams: optionalParams,
         }, null, '\t');
-        this.write(this.createPath('log'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL));
+        this.write(this.createPath('log'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL).concat(os_1.EOL));
     };
     FileLogger.prototype.error = function (message) {
         var optionalParams = [];
@@ -47,7 +47,7 @@ var FileLogger = /** @class */ (function () {
             message: message,
             optionalParams: optionalParams,
         }, null, '\t');
-        this.write(this.createPath('error'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL));
+        this.write(this.createPath('error'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL).concat(os_1.EOL));
     };
     FileLogger.prototype.warn = function (message) {
         var optionalParams = [];
@@ -58,7 +58,7 @@ var FileLogger = /** @class */ (function () {
             message: message,
             optionalParams: optionalParams,
         }, null, '\t');
-        this.write(this.createPath('warn'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL));
+        this.write(this.createPath('warn'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL).concat(os_1.EOL));
     };
     FileLogger.prototype.debug = function (message) {
         var optionalParams = [];
@@ -69,7 +69,7 @@ var FileLogger = /** @class */ (function () {
             message: message,
             optionalParams: optionalParams,
         }, null, '\t');
-        this.write(this.createPath('debug'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL));
+        this.write(this.createPath('debug'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL).concat(os_1.EOL));
     };
     FileLogger.prototype.verbose = function (message) {
         var optionalParams = [];
@@ -80,7 +80,7 @@ var FileLogger = /** @class */ (function () {
             message: message,
             optionalParams: optionalParams,
         }, null, '\t');
-        this.write(this.createPath('verbose'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL));
+        this.write(this.createPath('verbose'), "[".concat((0, dayjs_1.default)().format('YYYY-MM-DD HH:mm:ss'), "] ").concat(data).concat(os_1.EOL).concat(os_1.EOL));
     };
     FileLogger.create = function (options) {
         return new FileLogger(options);

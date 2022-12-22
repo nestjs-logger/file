@@ -24,12 +24,12 @@ import { resolve } from 'fs';
 
 const app = await NestFactory.create(AppModule, {
     logger: FileLogger.create({
-        directory: resolve(__dirname, 'storage/logs'),
+        directory: resolve(__dirname, '../storage/logs'),
     }),
 });
 ```
 
-This will log into `./storage/logs/nest.log`
+This will log into `./storage/logs/nest.log` outside the `dist` directory.
 
 __NOTE:__ All the following directories must be already existing.
 
