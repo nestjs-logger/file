@@ -1,0 +1,29 @@
+{
+	"name": "@nestjs-logger/file",
+	"version": "1.0.0",
+	"description": "NestJS File logger",
+	"main": "index.ts",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nestjs-logger/file.git"
+	},
+	"keywords": [
+		"nestjs",
+		"logging",
+		"logger"
+	],
+	"author": "John Michael Manlupig",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nestjs-logger/file/issues"
+	},
+	"homepage": "https://github.com/nestjs-logger/file#readme",
+	"dependencies": {
+		"@nestjs/common": "^9.2.1",
+		"dayjs": "^1.11.7"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.17"
+	}
+}
