@@ -1,9 +1,12 @@
 {
 	"name": "@nestjs-logger/file",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "NestJS File logger",
-	"main": "index.ts",
-	"scripts": {},
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"build": "tsc"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/nestjs-logger/file.git"
@@ -27,3 +30,4 @@
 		"@types/node": "^18.11.17"
 	}
 }
+
