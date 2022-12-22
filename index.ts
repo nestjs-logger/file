@@ -40,7 +40,7 @@ export class FileLogger implements LoggerService {
 			'\t'
 		);
 
-		appendFileSync(this.createPath('log'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}]${data}${EOL}`);
+		appendFileSync(this.createPath('log'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}] ${data}${EOL}`);
 	}
 
 	error(message: any, ...optionalParams: any[]) {
@@ -53,7 +53,7 @@ export class FileLogger implements LoggerService {
 			'\t'
 		);
 
-		appendFileSync(this.createPath('error'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}]${data}${EOL}`);
+		appendFileSync(this.createPath('error'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}] ${data}${EOL}`);
 	}
 
 	warn(message: any, ...optionalParams: any[]) {
@@ -66,7 +66,7 @@ export class FileLogger implements LoggerService {
 			'\t'
 		);
 
-		appendFileSync(this.createPath('warn'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}]${data}${EOL}`);
+		appendFileSync(this.createPath('warn'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}] ${data}${EOL}`);
 	}
 
 	debug(message: any, ...optionalParams: any[]) {
@@ -79,7 +79,7 @@ export class FileLogger implements LoggerService {
 			'\t'
 		);
 
-		appendFileSync(this.createPath('debug'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}]${data}${EOL}`);
+		appendFileSync(this.createPath('debug'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}] ${data}${EOL}`);
 	}
 
 	verbose(message: any, ...optionalParams: any[]) {
@@ -92,7 +92,7 @@ export class FileLogger implements LoggerService {
 			'\t'
 		);
 
-		appendFileSync(this.createPath('verbose'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}]${data}${EOL}`);
+		appendFileSync(this.createPath('verbose'), `[${dayjs().format('YYYY-MM-DD HH:mm:ss')}] ${data}${EOL}`);
 	}
 
 	static create(options: Options) {
